@@ -1,42 +1,76 @@
-#root {
-  max-width: 1280px;
+/* Styles généraux */
+.App {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  width: 100%;
+  padding: 20px;
+  margin-left: 130%;
+}
+
+/* Styles pour la carte de profil */
+.profile-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles pour les messages d'erreur et de succès */
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Styles pour le formulaire */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Styles pour les champs de saisie */
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input.invalid {
+  border-color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Styles pour les boutons */
+button:disabled {
+  background-color: #ccc;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
